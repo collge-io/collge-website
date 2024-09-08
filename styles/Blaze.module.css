@@ -1,0 +1,20 @@
+.blaze {
+    height: 80vh;
+    width: 100%;
+}
+
+.wrapperContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.notificationSection {
+    margin-top: 15rem;
+    height: 75vh;
+    width: 100%;
+}

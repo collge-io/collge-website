@@ -1,0 +1,196 @@
+.nearby {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.nearbyContainer {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nearbyCardsConTop {
+    height: 62%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nearbyCardsConBottom {
+    height: 35%;
+    width: 100%;
+}
+
+.topCardLeft {
+    width: 66%;
+    height: 100%;
+    background-color: var(--black-accent);
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topLeftCardTitle {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+.topLeftCardSubTitle {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.topLeftCardImg {
+    height: 80%;
+    width: 75%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+
+.topCardRight {
+    width: 32%;
+    height: 100%;
+    background-color: var(--black-accent);
+    /* padding: 2rem 2rem 0 2rem; */
+    border-radius: 24px;
+}
+
+.nearbyCardsConBottom {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottomCardLeft {
+    width: 32%;
+    height: 100%;
+    background-color: var(--black-accent);
+    border-radius: 24px;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bottomCardCenter {
+    width: 32%;
+    height: 100%;
+    background-color: var(--black-accent);
+    border-radius: 24px;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bottomCardLeftTitle {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.bottomCardLeftDesc {
+    color: var(--text-color);
+    font-size: 0.975rem;
+    margin-top: 0.5rem;
+    font-weight: 200;
+}
+
+.bottomCardImg {
+    width: 164px;
+    width: 164px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+
+    .nearby {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .nearbyContainer {
+        width: 92.5%;
+    }
+
+    .nearbyCardsConTop {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .topCardLeft {
+        width: 100%;
+    }
+
+    .topLeftCardTitle {
+        font-size: 1.75rem;
+    }
+
+    .topLeftCardSubTitle {
+        font-size: 0.925rem;
+    }
+
+    .topLeftCardImg {
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .bottomCardLeftTitle {
+        font-size: 1.125rem;
+    }
+
+    .bottomCardLeftDesc {
+        font-size: 0.925rem;
+    }
+
+    .topCardRight {
+        margin-top: 1rem;
+        width: 100%;
+        height: 350px;
+    }
+
+    .nearbyCardsConBottom {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 1rem 0;
+
+    }
+
+    .bottomCardLeft {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+
+    .bottomCardCenter {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+
+}

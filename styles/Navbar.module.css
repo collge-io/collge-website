@@ -1,0 +1,109 @@
+.nav {
+
+    color: var(--text-color);
+    width: 100%;
+    background-color: var(--black-accent);
+    padding: 1rem 0;
+}
+
+.responsiveNav {
+    display: none;
+    padding: 0 1rem;
+}
+
+.responsiveNavLinks {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 0 0 1.5rem 0;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    margin: 0 1rem;
+    cursor: pointer;
+    height: 52px;
+    width: 52px;
+}
+
+.responsiveNavLink {
+    list-style: none;
+    margin: 1rem;
+    border-radius: 32px;
+    background-color: var(--light-black);
+    padding: 1.5rem 1rem;
+    /* font-family: var(--font-primary); */
+    color: var(--text-color);
+    display: block;
+    font-size: 14px;
+    background-image: linear-gradient(90deg, #37ff00, #24730f);
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    background-position: left bottom;
+    transition: all ease-in 200ms;
+}
+
+.resposiveLogo {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    object-fit: contain;
+}
+
+.links {
+    list-style: none;
+    margin: 1rem 2rem;
+    /* font-family: var(--font-primary); */
+    font-size: 1rem;
+    font-weight: var(--font-semibold);
+    background-image: linear-gradient(90deg, #37ff00, #24730f);
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    background-position: left bottom;
+    transition: all ease-in 200ms;
+}
+
+.links:hover {
+    cursor: pointer;
+    background-size: 100% 3px;
+}
+
+@media screen and (max-width: 767px) {
+    .navLinks {
+        display: none;
+    }
+
+    .responsiveNav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1115px) {
+    .links {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px) {
+    .links {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+}

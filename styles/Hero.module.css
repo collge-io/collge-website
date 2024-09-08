@@ -1,0 +1,381 @@
+.hero {
+    width: 100%;
+    height: 90vh;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    overflow-x: hidden;
+}
+
+.heroContainer {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.downloadBtn {
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem 3rem;
+    border-radius: 16px;
+}
+
+.innerBtn {
+    width: 100%;
+    background-color: red;
+}
+
+.osLogo {
+    height: 24px;
+    width: 24px;
+    margin: 0 0.25rem;
+}
+
+.heroLeftCard {
+    width: 55%;
+    background-color: var(--black-accent);
+    height: 90%;
+    border-radius: 32px;
+    padding: 3rem 2.5rem;
+    background-image: url("../public/Hero-Img.png");
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.title {
+
+    color: var(--text-color);
+    font-size: 3.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+}
+
+.subTitle {
+    margin: 2rem 0;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--font-light);
+    width: 65%;
+    line-height: 1.8;
+}
+
+.heroRightCardsContainer {
+    width: 40%;
+    background-color: var(--primary);
+    height: 90%;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.heroRightTopCard {
+    width: 100%;
+    background-color: var(--black-accent);
+    height: 65%;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+}
+
+.heroRightTopCardTitle {
+    color: var(--text-color);
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.heroRightBottomCard {
+    width: 100%;
+    background-color: var(--black-accent);
+    border-radius: 32px;
+    padding: 1.25rem 1.5rem;
+}
+
+.spanText {
+    color: var(--secondary);
+}
+
+.heroBtnContainer {
+    overflow-y: hidden;
+    display: flex;
+    margin: 5rem 0 0 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    /* height: 30%; */
+
+}
+
+.heroImgCon {
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    display: none;
+}
+
+.heroImg {
+    width: 200px;
+    height: 200px;
+}
+
+.heroBtnImg {
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.heroMiniText {
+    color: var(--text-accent);
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.heroRightBottomCardTitle {
+    color: var(--text-color);
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.heroRightBottomCardTitleDesc {
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/* //phones */
+@media screen and (max-width: 767px) {
+
+    .hero {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .heroContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 92.5%;
+    }
+
+    .title {
+        font-size: 1.625rem;
+    }
+
+    .downloadBtn {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+
+    .subTitle {
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .heroLeftCard {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-image: none;
+    }
+
+    .heroBtnContainer {
+        margin: 3rem 0 0 0;
+    }
+
+    .heroRightCardsContainer {
+        width: 100%;
+        margin: 1rem auto 0 auto;
+
+    }
+
+    .heroRightTopCard {
+        margin-bottom: 1rem;
+    }
+
+    .heroRightBottomCard {
+        display: none;
+    }
+
+    .heroRightTopCardTitle {
+        font-size: var(--font-size-phone-title);
+    }
+
+    .heroRightBottomCardTitle {
+        font-size: var(--font-size-phone-title);
+        margin-bottom: 1rem;
+    }
+
+    .heroRightBottomCardTitleDesc {
+        font-size: var(--font-size-phone-body);
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1115px) {
+
+    .hero {
+        height: auto;
+    }
+
+    .heroContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.825rem;
+    }
+
+    .downloadBtn {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+
+    .subTitle {
+        font-size: 1.175rem;
+        width: 100%;
+    }
+
+    .heroLeftCard {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        background-image: none;
+    }
+
+    .heroBtnContainer {
+        margin: 3rem 0 0 0;
+    }
+
+    .heroRightCardsContainer {
+        width: 95%;
+        margin: 1rem auto 0 auto;
+
+    }
+
+    .heroRightTopCard {
+        margin-bottom: 1rem;
+    }
+
+    .heroRightTopCardTitle {
+        font-size: 1.375rem;
+    }
+
+    .heroRightBottomCardTitle {
+        font-size: 1.375rem;
+        margin-bottom: 1rem;
+    }
+
+    .heroRightBottomCardTitleDesc {
+        font-size: 1.175rem;
+    }
+
+}
+
+@media screen and (min-width: 1116px) and (max-width: 1398px) {
+    .hero {
+        min-height: 90vh;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+    }
+
+    .heroRightTopCard {
+        height: 65%;
+    }
+
+    .heroRightTopCardTitle {
+        font-size: 1.25rem;
+    }
+
+    .heroRightBottomCardTitle {
+        font-size: 1.25rem;
+    }
+
+    .heroRightBottomCardTitleDesc {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .hero {
+        min-height: 80vh;
+    }
+
+    .subTitle {
+        font-size: 1.175rem;
+    }
+
+    .heroRightTopCard {
+        height: 60%;
+    }
+
+    .heroRightTopCardTitle {
+        font-size: 1.35rem;
+    }
+
+    .heroRightBottomCardTitle {
+        font-size: 1.25rem;
+    }
+
+    .heroBtnContainer {
+        margin: 2.25rem 0 0 0;
+    }
+
+    .heroRightBottomCardTitleDesc {
+        font-size: 1.175rem;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1601px) {
+    .hero {
+        height: 75vh;
+    }
+
+    .subTitle {
+        font-size: 1.25em;
+    }
+
+    .heroRightTopCard {
+        height: 65%;
+    }
+
+    .heroRightTopCardTitle {
+        font-size: 1.75rem;
+    }
+
+    .heroRightBottomCardTitle {
+        font-size: 1.5rem;
+    }
+
+    .heroRightBottomCardTitleDesc {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+}
