@@ -20,3 +20,4 @@ bun dev
 ```
 
 # collge-website
+# collge-website
