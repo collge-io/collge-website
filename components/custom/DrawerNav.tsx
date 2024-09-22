@@ -16,7 +16,7 @@ import altMenu from "@/public/menu-2.png"
 import styles from "@/styles/Navbar.module.css"
 
 const DrawerNav = () => [
-    <Drawer>
+    <Drawer key={1}>
         <DrawerTrigger>
             <Image style={{ width: "28px", height: "28px" }} src={menu} alt="menu"></Image>
         </DrawerTrigger>
