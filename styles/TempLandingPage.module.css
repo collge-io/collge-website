@@ -1,0 +1,13 @@
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.container {
+    display: grid;
+    height: 80%;
+    width: 100%;
+    place-items: center;
+}

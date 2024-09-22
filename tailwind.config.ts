@@ -90,6 +90,10 @@ const config = {
             transform: "translate(-50%, -50%) scale(0.9)",
           },
         },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
 
       },
       animation: {
@@ -98,6 +102,7 @@ const config = {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
         ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
         gradient: "gradient 8s linear infinite",
+        grid: "grid 15s linear infinite",
       },
     },
   },
