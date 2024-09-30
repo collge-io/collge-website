@@ -7,7 +7,7 @@ function TempLandingPage() {
     return (
         <React.Fragment>
 
-            <div style={{ height: "80vh" }}>
+            <div style={{ height: "100vh" }}>
                 <RetroGridDemo />
             </div>
 
