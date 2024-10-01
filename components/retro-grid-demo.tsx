@@ -20,7 +20,7 @@ export const RetroGridDemo = () => {
 
       <h5 className="text-xl mt-4 text-left">Coming soon to make <span style={{ color: "#45ea69" }}>university</span> life even better!</h5>
 
-      <button onClick={() => router.push("/interest")} className="text-sm mt-8 py-4 px-5 bg-[#45ea69] rounded-full  text-[#FAFAFA] border-none" type="button">Register Interest</button>
+      <button onClick={() => router.push("/interest")} className="text-sm mt-8 py-4 px-5 bg-[#FAFAFA] rounded-full  text-[#010101] border-none" type="button">Register Interest</button>
 
       <RetroGrid />
     </div >
