@@ -34,7 +34,7 @@ function UserInterest() {
         if (!NAME_REGEX.test(name.trim())) {
             setIsError({
                 error: true,
-                errorMsg: "Hold up! We need to know your name. Name should be atleast 2 characters."
+                errorMsg: "Hold up! Name should be atleast 2 characters. No numbers allowed."
             });
             isValid = false;
         } else if (!EMAIL_REGEX.test(emailInput.trim())) {
