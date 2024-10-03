@@ -23,30 +23,30 @@ function UserInterest() {
     const [uniName, setUniName] = useState('');
     const [emailInput, setEmailInput] = useState('');
 
-    const NAME_REGEX = /^[A-Za-z]+(?:[' -]?[A-Za-z]+)*$/
+    const NAME_REGEX = /^[a-zA-Z\s]{2,}$/
     const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    const UNIVERSITY_NAME = /^[A-Za-z]+(?:[' -]?[A-Za-z]+)*$/
+    const UNIVERSITY_NAME = /^[a-zA-Z\s]{2,}$/
 
 
     const validateForm = () => {
         let isValid = true;
 
-        if (!NAME_REGEX.test(name)) {
+        if (!NAME_REGEX.test(name.trim())) {
             setIsError({
                 error: true,
-                errorMsg: "Hold up! Name should be between 4-32 characters & should not contain any special characters."
+                errorMsg: "Hold up! We need to know your name. Name should be atleast 2 characters."
             });
             isValid = false;
-        } else if (!EMAIL_REGEX.test(emailInput)) {
+        } else if (!EMAIL_REGEX.test(emailInput.trim())) {
             setIsError({
                 error: true,
                 errorMsg: "Whoops! We really need your email!\n Please add a valid email address."
             });
             isValid = false;
-        } else if (!UNIVERSITY_NAME.test(uniName)) {
+        } else if (!UNIVERSITY_NAME.test(uniName.trim())) {
             setIsError({
                 error: true,
-                errorMsg: "Uh Oh! We need your university so we can get to you sooner!\n University name should be between 8-48 characters"
+                errorMsg: "Uh Oh! We need your university so we can get to you sooner!\n University name should be atleast 2 characters long."
             });
             isValid = false;
         } else if (gender === '' || gender === null) {
@@ -77,10 +77,10 @@ function UserInterest() {
 
 
             const data = {
-                fullName: name,
+                fullName: name.trim(),
                 gender: gender,
-                email: emailInput,
-                universityName: uniName,
+                email: emailInput.trim(),
+                universityName: uniName.trim(),
             };
 
             const response = await fetch(`/user`, {
@@ -135,10 +135,10 @@ function UserInterest() {
                         <input onChange={(e) => setEmailInput(e.target.value)} required className={styles.input} placeholder='Personal or Student Email'></input>
 
                         <label className={styles.label}>University Name</label>
-                        <input onChange={(e) => setUniName(e.target.value)} required className={styles.input} placeholder='University Name'></input>
+                        <input onChange={(e) => setUniName(e.target.value)} required className={styles.input} placeholder='Uni Name or Nickname (for e.g LUMS)'></input>
 
                         <label className={styles.label}>Gender</label>
-                        <select value={gender} onChange={(e) => setGender(e.target.value)} className={styles.menu} name="genders" id="genders">
+                        <select value={gender} style={{ marginRight: "8px" }} onChange={(e) => setGender(e.target.value)} className={styles.menu} name="genders" id="genders">
                             <option className={styles.dropdownOption} value="Male">Male</option>
                             <option className={styles.dropdownOption} value="Female">Female</option>
                         </select>
