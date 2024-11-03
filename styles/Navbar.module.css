@@ -1,7 +1,6 @@
 .nav {
 
     color: var(--text-color);
-    width: 100%;
     background-color: var(--black-accent);
     padding: 1rem 0;
 }
@@ -21,15 +20,16 @@
 .navLinks {
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: center;
-
 }
 
 .logo {
-    margin: 0 1rem;
+
     cursor: pointer;
     height: 52px;
     width: 52px;
+    margin: 0 1.25rem;
 }
 
 .responsiveNavLink {
@@ -59,7 +59,7 @@
 
 .links {
     list-style: none;
-    margin: 1rem 2rem;
+    /* margin: 1rem 2rem; */
     /* font-family: var(--font-primary); */
     font-size: 1rem;
     font-weight: var(--font-semibold);

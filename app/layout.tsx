@@ -32,11 +32,13 @@ export default function RootLayout({
         <body className={poppins.className}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
+            <div style={{ paddingLeft: "3.5rem", backgroundColor: "#121212" }}>
+              <Navbar />
+            </div>
             {children}
 
             {/* <DockDemo /> */}

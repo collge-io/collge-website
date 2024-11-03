@@ -21,7 +21,7 @@ const Navbar = () => {
                 <nav className={styles.nav}>
                     <ul className={styles.navLinks}>
 
-                        <div onClick={() => router.push("/blaze")} className="z-10 flex  items-center justify-center">
+                        <div style={{ paddingRight: "1.25rem" }} onClick={() => router.push("/blaze")} className="z-10 flex  items-center justify-center">
                             <AnimatedGradientText>
                                 {/* 🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "} */}
                                 <span
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <a href='/#nearby'><li className={styles.links}>Nearby</li></a>
+                        <a style={{ paddingRight: "1.25rem" }} href='/#nearby'><li className={styles.links}>Nearby</li></a>
                         <a href='/#whats-new'><li className={styles.links}>What's New</li></a>
 
                     </ul>
