@@ -30,6 +30,10 @@
   --font-size-phone-title: 1.175rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primary);
 }

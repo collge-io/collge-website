@@ -20,7 +20,7 @@ const Navbar = () => {
             <header>
                 <nav className={styles.nav}>
                     <ul className={styles.navLinks}>
-                        <a><li className={styles.links}>What's New</li></a>
+
                         <div onClick={() => router.push("/blaze")} className="z-10 flex  items-center justify-center">
                             <AnimatedGradientText>
                                 {/* 🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "} */}
@@ -35,6 +35,7 @@ const Navbar = () => {
                                 {/* <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" /> */}
                             </AnimatedGradientText>
                         </div>
+                        <a href='/#linkup'><li className={styles.links}>Link Up</li></a>
 
                         <svg onClick={() => router.push("/")} className={styles.logo} width="68" height="68" viewBox="0 0 644 704" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g style={{ "mixBlendMode": "hard-light" }}>
@@ -47,16 +48,15 @@ const Navbar = () => {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <a><li className={styles.links}>Link Up</li></a>
-                        <a><li className={styles.links}>Nearby</li></a>
+                        <a href='/#nearby'><li className={styles.links}>Nearby</li></a>
+                        <a href='/#whats-new'><li className={styles.links}>What's New</li></a>
 
                     </ul>
 
                     <div className={styles.responsiveNav}>
                         <Image onClick={() => router.push("/")} className={styles.resposiveLogo} src={brandLogo} alt='logo'></Image>
-                        <div onClick={() => router.push("/blaze")} className="z-10 flex items-center justify-center">
+                        {/* <div onClick={() => router.push("/blaze")} className="z-10 flex items-center justify-center">
                             <AnimatedGradientText>
-                                {/* 🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "} */}
                                 <span
                                     className={cn(
                                         `inline text-lg animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
@@ -66,8 +66,8 @@ const Navbar = () => {
                                 </span>
                                 <ChevronRight className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </AnimatedGradientText>
-                        </div>
-                        {/* <DrawerNav></DrawerNav> */}
+                        </div> */}
+                        <DrawerNav></DrawerNav>
                     </div>
                 </nav>
 

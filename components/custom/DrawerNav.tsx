@@ -32,10 +32,10 @@ const DrawerNav = () => [
                 </DrawerClose>
             </DrawerFooter> */}
             <ul className={styles.responsiveNavLinks}>
-                <a><li className={styles.responsiveNavLink}>What's New</li></a>
-                <a><li className={styles.responsiveNavLink}>Blaze</li></a>
-                <a><li className={styles.responsiveNavLink}>Link Up</li></a>
-                <a><li className={styles.responsiveNavLink}>Nearby</li></a>
+                <a href="/blaze"><li className={styles.responsiveNavLink}>Blaze</li></a>
+                <a href="/#linkup"><li className={styles.responsiveNavLink}>Link Up</li></a>
+                <a href="/#nearby"><li className={styles.responsiveNavLink}>Nearby</li></a>
+                <a href="/#whats-new"><li className={styles.responsiveNavLink}>What's New</li></a>
             </ul>
         </DrawerContent>
     </Drawer>

@@ -44,7 +44,7 @@ function Hero() {
 
 
         <React.Fragment>
-            <div className={styles.hero}>
+            <div id='home' className={styles.hero}>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroLeftCard}>
                         <h1 className={styles.title}>The <span className={styles.spanText}>Student</span> App That Does It All.</h1>
@@ -54,11 +54,11 @@ function Hero() {
                         </p>
 
                         <div style={{ color: "#A2A2A2" }}>
-                            <TypingAnimation className="text-base text-left font-semibold " text="It's Only Getting Better From Here!" />
+                            <TypingAnimation className="text-base text-left font-semibold " text="Arriving to you university December 6th." />
                         </div>
 
                         <div className={styles.heroBtnContainer}>
-                            {
+                            {/* {
                                 os === "macOS" ?
                                     <button className={styles.downloadBtn}>
                                         <p>Download on</p>
@@ -77,7 +77,13 @@ function Hero() {
                                             <p>and</p>
                                             <Image alt='apple-logo' src={android} className={styles.osLogo}></Image>
                                         </button>
-                            }
+                            } */}
+
+                            <a href='/interest'>
+                                <button className={styles.downloadBtn}>
+                                    <p>Register Interest!</p>
+                                </button>
+                            </a>
 
                         </div>
                         <div className={styles.heroImgCon}>

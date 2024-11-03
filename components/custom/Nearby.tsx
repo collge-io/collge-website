@@ -7,7 +7,7 @@ import notification from "@/public/notification.png"
 
 function Nearby() {
     return (
-        <section className={styles.nearby}>
+        <section id='nearby' className={styles.nearby}>
 
             <div className={styles.nearbyContainer}>
                 <div className={styles.nearbyCardsConTop}>

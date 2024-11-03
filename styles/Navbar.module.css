@@ -87,6 +87,10 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .resposiveLogo :hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1115px) {

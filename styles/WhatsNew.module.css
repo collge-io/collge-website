@@ -8,16 +8,14 @@
 .whatsNewCardsContainer {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-height: 200px;
-    width: 77%;
+    width: 100%;
     margin: 3rem auto;
 }
 
-.edgeCardsContainer {
-    width: 25%;
-}
+
 
 .edgeCard {
     height: 350px;

@@ -11,12 +11,12 @@ import wink from "@/public/wink.png"
 function WhatsNew() {
     return (
 
-        <section className={styles.whatsNewSection}>
+        <section id='whats-new' className={styles.whatsNewSection}>
 
             <SparklesText text="What else?"></SparklesText>
 
             <div className={styles.whatsNewCardsContainer}>
-                <div className={styles.edgeCardsContainer}>
+                {/* <div className={styles.edgeCardsContainer}>
                     <div className={`${styles.edgeCard} ${styles.marginRight}`}>
                         <div className={styles.edgeCardImgTitleCon}>
                             <Image className={styles.edgeCardImg} alt='club logo' src={club}></Image>
@@ -34,7 +34,7 @@ function WhatsNew() {
                             <p className={styles.edgeCardDesc}>Don't be that person who stayed in. Join or a throw a department party, meet new people, and show off your best moves. From rooftop raves to basement bangers, there's a party for everyone.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className={styles.centerCards}>
                     <div className={`${styles.centerCard} ${styles.marginRight}`}>
@@ -53,12 +53,12 @@ function WhatsNew() {
                         </div>
                         <div className={`${styles.centerCardTextHolder}`}>
                             <h1 className={styles.centerCardTitle}>Wink</h1>
-                            <h4 className={styles.centerCardSubTitle}>Digital flirting for the digitally shy. No need for pickup lines, just a wink will do!</h4>
+                            <h4 className={styles.centerCardSubTitle} style={{ marginRight: "8px" }}>Digital flirting for the digitally shy. No need for pickup lines, just a wink will do!</h4>
                         </div>
                     </div>
                 </div>
 
-                <div className={`${styles.edgeCardsContainer} ${styles.isBottomCardVisible}`}>
+                {/* <div className={`${styles.edgeCardsContainer} ${styles.isBottomCardVisible}`}>
                     <div className={styles.edgeCard}>
                         <div className={styles.edgeCardImgTitleCon}>
                             <Image className={styles.edgeCardImg} alt='club logo' src={party}></Image>
@@ -66,7 +66,7 @@ function WhatsNew() {
                         </div>
                         <p className={styles.edgeCardDesc}>Don't be that person who stayed in. Join or throw a department party, meet new people, and show off your best moves. From rooftop raves to basement bangers, there's a party for everyone.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </section>

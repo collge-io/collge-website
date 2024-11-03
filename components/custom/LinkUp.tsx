@@ -7,7 +7,7 @@ import { OrbitCicles } from './OrbitCircle';
 
 function LinkUp() {
     return (
-        <section className={styles.linkUp}>
+        <section id='linkup' className={styles.linkUp}>
             <div className={styles.linkUpCardsContainer}>
 
                 <div className={styles.linkUpLeftCard}>
