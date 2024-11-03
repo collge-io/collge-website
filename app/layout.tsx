@@ -36,9 +36,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div style={{ paddingLeft: "3.5rem", backgroundColor: "#121212" }}>
-              <Navbar />
-            </div>
+            <Navbar />
             {children}
 
             {/* <DockDemo /> */}
