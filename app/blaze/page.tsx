@@ -5,6 +5,7 @@ import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import blazeLinkUp from "@/public/Blaze-LinkUp.png"
 import styles from "@/styles/Blaze.module.css"
 import Image from 'next/image'
+import SparklesText from '@/components/magicui/sparkles-text'
 
 import { cn } from "@/lib/utils";
 import { AnimatedListDemo } from "@/components/custom/AnimatedList"
@@ -55,11 +56,12 @@ function Blaze() {
             </section>
 
             {/* WHO VISITED */}
-            <section className="w-full h-[85vh] lg:h-[85vh] lg:mt-6">
+            <section className="w-full h-[30vh] lg:h-[30vh] lg:mt-6">
                 <div className={`${styles.wrapperContainer}`}>
-                    <h1 className='lg:text-5xl text-3xl mb-6 font-bold text-black dark:text-white text-center'>Go beyond your <span style={{ color: "#45EA69" }}>university!</span></h1>
+                    <SparklesText text="More Exciting Features To Come"></SparklesText>
+                    {/* <h1 className='lg:text-5xl text-3xl mb-6 font-bold text-black dark:text-white text-center'>Go beyond your <span style={{ color: "#45EA69" }}>university!</span></h1>
                     <p className='text-sm lg:text-lg text-black dark:text-[#A2A2A2] text-center'>Meet new people from your city!</p>
-                    <Image style={{ marginTop: "2rem" }} className={styles.linkUpLeftCardImg} alt="link up img" src={blazeLinkUp}></Image>
+                    <Image style={{ marginTop: "2rem" }} className={styles.linkUpLeftCardImg} alt="link up img" src={blazeLinkUp}></Image> */}
                 </div>
             </section>
         </React.Fragment>
