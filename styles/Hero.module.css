@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .downloadBtn {
@@ -24,6 +25,7 @@
     flex-direction: row;
     padding: 1rem 3rem;
     border-radius: 16px;
+   
 }
 
 .innerBtn {
@@ -40,7 +42,7 @@
 .heroLeftCard {
     width: 55%;
     background-color: var(--black-accent);
-    height: 90%;
+    height: 95%;
     border-radius: 32px;
     padding: 3rem 2.5rem;
     background-image: url("../public/Hero-Img.png");
@@ -70,7 +72,7 @@
 .heroRightCardsContainer {
     width: 40%;
     background-color: var(--primary);
-    height: 90%;
+    height: 95%;
     border-radius: 32px;
 
     display: flex;
@@ -83,13 +85,13 @@
 .heroRightTopCard {
     width: 100%;
     background-color: var(--black-accent);
-    height: 65%;
+    height: auto;
     border-radius: 32px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
 }
 
 .heroRightTopCardTitle {
@@ -102,7 +104,8 @@
     width: 100%;
     background-color: var(--black-accent);
     border-radius: 32px;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
+   
 }
 
 .spanText {
@@ -112,12 +115,12 @@
 .heroBtnContainer {
     overflow-y: hidden;
     display: flex;
-    margin: 5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     align-items: center;
     /* height: 30%; */
-
+    width: 50%;
 }
 
 .heroImgCon {
