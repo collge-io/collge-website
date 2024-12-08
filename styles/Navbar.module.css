@@ -20,17 +20,45 @@
 .navLinks {
     display: flex;
     align-items: center;
+    justify-content: space-around; /* Separate left and right groups */
+    position: relative;
+    height: 60px;
     width: 100%;
+}
+
+.navLeft, .navRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 38%;
+}
+.navLeft {
+    justify-content: flex-end;
+    
+}
+.navRight {
+    justify-content: flex-start;
+}
+.navCenter {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 2px solid green; */
+    width: 10%;
     justify-content: center;
 }
 
-.logo {
 
-    cursor: pointer;
-    height: 52px;
-    width: 52px;
-    margin: 0 1.25rem;
+
+ 
+
+.navCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 .responsiveNavLink {
     list-style: none;
