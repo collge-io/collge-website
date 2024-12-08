@@ -54,7 +54,7 @@ function Hero() {
                         </p>
 
                         <div style={{ color: "#A2A2A2" }}>
-                            <TypingAnimation className="text-base text-left font-semibold " text="Arriving to your university December 6th." />
+                            <TypingAnimation className="text-base text-left font-semibold " text="Coming Soon..." />
                         </div>
 
                         <div className={styles.heroBtnContainer}>
