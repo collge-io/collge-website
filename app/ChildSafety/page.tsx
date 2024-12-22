@@ -30,7 +30,7 @@ const page = () => {
         <div className="text-lg leading-relaxed">
           <p className="font-semibold text-xl">Moderation and Prevention</p>
           <p>
-            Our platform uses in app reports to identify and remove harmful content.
+            Our platform uses in app reporting functionality to identify and remove harmful content.
           </p>
         </div>
 
