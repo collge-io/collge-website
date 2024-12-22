@@ -1,0 +1,315 @@
+.whatsNewSection {
+
+    min-height: 50vh;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.whatsNewCardsContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+
+
+.edgeCard {
+    height: 350px;
+    width: 100%;
+    padding: 1.75rem 1.25rem;
+    background-color: var(--black-accent);
+    border-radius: 24px;
+}
+
+.edgeCardImgTitleCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edgeCardTitle {
+    color: var(--text-color);
+    margin: 0 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.edgeCardImg {
+    height: 52px;
+    width: 52px;
+}
+
+.edgeCardDesc {
+    margin: 1rem 0;
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.centerCards {
+
+    height: 350px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    gap: 1rem;
+    /* margin-top: 20px; */
+}
+
+.centerCard {
+    width: 100%;
+    height: 47%;
+    background-color: var(--black-accent);
+    border-radius: 24px;
+    display: flex;
+    font-weight: 300;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+
+.centerCardImgHolder {
+    height: 100%;
+    margin: 0 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerCardImg {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.centerCardTextHolder {
+    height: 100%;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.centerCardTitle {
+    color: var(--secondary);
+    font-size: 1.525rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.centerCardSubTitle {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* CONDITIONAL CLASSES */
+
+.isVisible {
+    display: none;
+}
+
+.isBottomCardVisible {
+    display: block;
+}
+
+.secondCard {
+    margin-bottom: 0;
+}
+
+.marginRight {
+    margin-right: 0;
+}
+
+.removeMarginRightFromImage {
+    margin: 0 0 0 0;
+}
+
+/* ---------------- */
+
+/* //phones */
+@media screen and (max-width: 767px) {
+
+    .whatsNewCardsContainer {
+        width: 92.5%;
+        flex-direction: column;
+    }
+
+    .edgeCardsContainer {
+        width: 100%;
+    }
+
+    .edgeCard {
+        width: 100%;
+        height: auto;
+    }
+
+    .edgeCardImg {
+        height: 44px;
+        width: 44px;
+    }
+
+    .edgeCardTitle {
+        font-size: 1.175rem;
+    }
+
+    .edgeCardDesc {
+        font-size: 0.925rem;
+    }
+
+    .centerCards {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        /* margin: 1rem 0; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .centerCard {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem 2rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .centerCardTextHolder {
+        width: 70%;
+    }
+
+    .centerCardImg {
+        height: 64px;
+        width: 64px;
+    }
+
+    .centerCardTitle {
+        font-size: var(--font-size-phone-title);
+    }
+
+    .centerCardSubTitle {
+        font-size: var(--font-size-phone-body);
+    }
+
+    .secondCard {
+        margin-bottom: 1rem;
+    }
+
+    .removeMarginRightFromImage {
+
+        margin: 0 0 0 1rem;
+    }
+}
+
+
+/* tablets and ipads */
+
+@media screen and (min-width: 768px) and (max-width: 1115px) {
+
+    .whatsNewCardsContainer {
+        width: 85%;
+        flex-wrap: wrap;
+    }
+
+    .edgeCardsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .isVisible {
+        display: block;
+    }
+
+    .isBottomCardVisible {
+        display: none;
+    }
+
+    .edgeCard {
+        width: 100%;
+        height: 250px;
+    }
+
+    .edgeCardImg {
+        height: 44px;
+        width: 44px;
+    }
+
+    .edgeCardTitle {
+        font-size: 1.175rem;
+    }
+
+    .edgeCardDesc {
+        font-size: 0.925rem;
+    }
+
+    .centerCards {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .centerCard {
+        width: 100%;
+        height: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem 2rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .centerCardTextHolder {
+        width: 100%;
+    }
+
+
+    .centerCardImg {
+        height: 100px;
+        width: 100px;
+    }
+
+    .centerCardTitle {
+        font-size: var(--font-size-phone-title);
+    }
+
+    .centerCardSubTitle {
+        font-size: var(--font-size-phone-body);
+    }
+
+    .marginRight {
+        margin-right: 1rem;
+    }
+
+    .removeMarginRightFromImage {
+
+        margin: 0 0 0 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1116px) and (max-width: 1398px) {
+
+    .edgeCardDesc {
+        font-size: 1rem;
+    }
+
+}

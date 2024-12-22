@@ -6,6 +6,7 @@ import Navbar from "@/components/custom/NavBar";
 import React from "react";
 import { Dock } from "@/components/ui/dock";
 import { DockDemo } from "@/components/custom/Dock";
+import Footer from "@/components/custom/Footer";
 
 const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800', '900', '300'], // Choose the weights you need
@@ -38,6 +39,7 @@ export default function RootLayout({
           >
             <Navbar />
             {children}
+            
 
             {/* <DockDemo /> */}
           </ThemeProvider>
