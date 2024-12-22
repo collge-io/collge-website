@@ -13,6 +13,7 @@ import android from "@/public/android.png"
 import { userAgent } from 'next/server';
 import LinkUp from './LinkUp';
 import WhatsNew from './WhatsNew';
+import Footer from './Footer';
 
 function Hero() {
 
@@ -41,7 +42,6 @@ function Hero() {
 
     }, [userAgent]);
     return (
-
 
         <React.Fragment>
             <div id='home' className={styles.hero}>
@@ -119,6 +119,7 @@ function Hero() {
             <LinkUp></LinkUp>
             <Nearby></Nearby>
             <WhatsNew></WhatsNew>
+            <Footer></Footer>
 
         </React.Fragment>
 
