@@ -54,7 +54,7 @@ function Hero() {
                         </p>
 
                         <div style={{ color: "#A2A2A2" }}>
-                            <TypingAnimation className="text-base text-left font-semibold " text="Coming Soon..." />
+                            <TypingAnimation className="text-base text-left font-semibold " text="Download on App Store & PlayStore" />
                         </div>
 
                         <div className={styles.heroBtnContainer}>
@@ -79,9 +79,11 @@ function Hero() {
                                         </button>
                             } */}
 
-                            <a href='/interest'>
+
+
+                            <a href='https://linktr.ee/collge.io' target='_blank'>
                                 <button className={styles.downloadBtn}>
-                                    <p>Register Interest!</p>
+                                    <p>Download</p>
                                 </button>
                             </a>
 
