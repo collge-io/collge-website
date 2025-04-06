@@ -37,19 +37,27 @@ const Footer = () => {
 
         {/* Support and Social Links */}
         <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-xl font-semibold">Support</h3>
-          <p className="text-[var(--text-accent)]">
-            Need help? Email us at:<br/>
-            <a href="mailto:support@collge.io" className="text-[var(--secondary)] hover:underline">
-              support@collge.io
-            </a>
-          </p>
+          <h3 className="text-xl font-semibold">About Us</h3>
+          <ul className="space-y-2">
+            {/* <li>
+              <div onClick={() => router.push("/deleteDetails")} className="text-[var(--text-accent)] hover:text-[var(--text-color)] transition-colors cursor-pointer">
+                Delete Your Data
+              </div>
+            </li> */}
+            <li>
+              <div onClick={() => router.push("/aboutUs")} className="text-[var(--text-accent)] hover:text-[var(--text-color)] transition-colors cursor-pointer">
+                All you need to know
+              </div>
+            </li>
+          </ul>
           <div className="flex justify-center space-x-4">
             <Link href="https://www.instagram.com/collge.io/" target="_blank" rel="noopener noreferrer" className="p-2 bg-pink-500 rounded-full hover:bg-pink-600 transition-colors">
               <FaInstagram className="text-white" />
             </Link>
           </div>
         </div>
+          
+        
 
         {/* Policies */}
         <div className="flex flex-col items-center space-y-4">
